@@ -9,7 +9,7 @@ import (
 func CorsConfig() cors.Config {
 
 	corsConfig := cors.DefaultConfig()
-	corsConfig.AllowOrigins = []string{"http://localhost:3000"}
+	corsConfig.AllowOrigins = []string{"http://localhost:3001"}
 	corsConfig.AllowMethods = []string{"GET", "POST", "PUT"}
 	corsConfig.AllowHeaders = []string{"Authorization", "Origin"}
 	corsConfig.AllowCredentials = true

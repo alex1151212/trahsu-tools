@@ -20,6 +20,7 @@ func Router() *gin.Engine {
 	})
 
 	r.GET("/crawler", service.Crawler)
+	r.GET("/punch_in", service.PunchIn)
 
 	// r.GET("/crawler-ws", service.Crawler)
 

@@ -114,11 +114,5 @@ func GetPublicPostHandler(writer http.ResponseWriter, request *http.Request) []s
 		fmt.Println(scanner.Text())
 	}
 
-	// 檢查是否有錯誤
-	if err := cmd.Wait(); err != nil {
-		fmt.Println("腳本執行錯誤。")
-		panic(err)
-	}
-
 	return imgSrcList
 }
